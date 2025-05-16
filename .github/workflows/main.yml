@@ -1,1 +1,11 @@
-
+name: Testando o GitHub Actions
+on:
+    push:
+        branches:
+            - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Testando Pipeline
+              run: echo "Testando Pipeline"
